@@ -1159,6 +1159,7 @@ nodeagentskus
 nodeconfiguration
 nodecounts
 Nodeploy
+nodetool
 nodrm
 nometadata
 nonadmin
