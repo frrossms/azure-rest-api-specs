@@ -6176,7 +6176,7 @@
           "readOnly": true,
           "description": "List of Private Endpoint Connections configured for the Cosmos DB account.",
           "items": {
-            "$ref": "../../stable/2021-01-15/privateEndpointConnection.json#/definitions/PrivateEndpointConnection"
+            "$ref": "../../preview/2021-03-01-preview/privateEndpointConnection.json#/definitions/PrivateEndpointConnection"
           }
         },
         "enableMultipleWriteLocations": {
@@ -8491,7 +8491,8 @@
           "type": "string",
           "enum": [
             "3.2",
-            "3.6"
+            "3.6",
+            "4.0"
           ],
           "description": "Describes the ServerVersion of an a MongoDB account.",
           "x-ms-enum": {
