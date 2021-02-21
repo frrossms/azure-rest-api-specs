@@ -159,7 +159,9 @@
         },
         "systemData": {
           "createdAt": "2021-03-12T22:05:09Z"
-        }
+        },
+        "networkAclBypass": "None",
+        "networkAclBypassResourceIds": []
       }
     }
   }

@@ -5391,6 +5391,17 @@
           "items": {
             "$ref": "#/definitions/CorsPolicy"
           }
+        },
+        "networkAclBypass": {
+          "description": "Indicates what services are allowed to bypass firewall checks.",
+          "$ref": "#/definitions/NetworkAclBypass"
+        },
+        "networkAclBypassResourceIds": {
+          "type": "array",
+          "description": "An array that contains the Resource Ids for Network Acl Bypass for the Cosmos DB account.",
+          "items": {
+            "type": "string"
+          }
         }
       }
     },
@@ -5493,6 +5504,17 @@
           "description": "The CORS policy for the Cosmos DB database account.",
           "items": {
             "$ref": "#/definitions/CorsPolicy"
+          }
+        },
+        "networkAclBypass": {
+          "description": "Indicates what services are allowed to bypass firewall checks.",
+          "$ref": "#/definitions/NetworkAclBypass"
+        },
+        "networkAclBypassResourceIds": {
+          "type": "array",
+          "description": "An array that contains the Resource Ids for Network Acl Bypass for the Cosmos DB account.",
+          "items": {
+            "type": "string"
           }
         }
       },
@@ -5646,6 +5668,17 @@
           "description": "The CORS policy for the Cosmos DB database account.",
           "items": {
             "$ref": "#/definitions/CorsPolicy"
+          }
+        },
+        "networkAclBypass": {
+          "description": "Indicates what services are allowed to bypass firewall checks.",
+          "$ref": "#/definitions/NetworkAclBypass"
+        },
+        "networkAclBypassResourceIds": {
+          "type": "array",
+          "description": "An array that contains the Resource Ids for Network Acl Bypass for the Cosmos DB account.",
+          "items": {
+            "type": "string"
           }
         }
       }
@@ -7096,6 +7129,18 @@
           "type": "boolean",
           "description": "Create firewall rule before the virtual network has vnet service endpoint enabled."
         }
+      }
+    },
+    "NetworkAclBypass": {
+      "description": "Indicates what services are allowed to bypass firewall checks.",
+      "type": "string",
+      "enum": [
+        "None",
+        "AzureServices"
+      ],
+      "x-ms-enum": {
+        "name": "NetworkAclBypass",
+        "modelAsString": false
       }
     },
     "PrivateEndpointConnection": {
