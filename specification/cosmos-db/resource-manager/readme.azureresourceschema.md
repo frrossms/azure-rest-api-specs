@@ -35,6 +35,8 @@ input-file:
   - Microsoft.DocumentDB/preview/2021-03-01-preview/notebook.json
   - Microsoft.DocumentDB/preview/2021-03-01-preview/rbac.json
   - Microsoft.DocumentDB/preview/2021-03-01-preview/restorable.json
+  - Microsoft.DocumentDB/preview/2021-03-01-preview/privateLinkResources.json
+  - Microsoft.DocumentDB/preview/2021-03-01-preview/privateEndpointConnection.json
 
 ```
 

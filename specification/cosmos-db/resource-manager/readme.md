@@ -39,8 +39,8 @@ input-file:
 - Microsoft.DocumentDB/preview/2021-03-01-preview/rbac.json
 - Microsoft.DocumentDB/preview/2021-03-01-preview/restorable.json
 - Microsoft.DocumentDB/preview/2021-03-01-preview/nova.json
-- Microsoft.DocumentDB/preview/2019-08-01-preview/privateLinkResources.json
-- Microsoft.DocumentDB/preview/2019-08-01-preview/privateEndpointConnection.json
+- Microsoft.DocumentDB/preview/2021-03-01-preview/privateLinkResources.json
+- Microsoft.DocumentDB/preview/2021-03-01-preview/privateEndpointConnection.json
 modelerfour:
   lenient-model-deduplication: true
 ```
