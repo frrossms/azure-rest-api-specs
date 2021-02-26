@@ -38,7 +38,7 @@ input-file:
 - Microsoft.DocumentDB/preview/2021-03-01-preview/notebook.json
 - Microsoft.DocumentDB/preview/2021-03-01-preview/rbac.json
 - Microsoft.DocumentDB/preview/2021-03-01-preview/restorable.json
-- Microsoft.DocumentDB/preview/2021-03-01-preview/nova.json
+- Microsoft.DocumentDB/preview/2021-03-01-preview/managedCassandra.json?
 - Microsoft.DocumentDB/preview/2019-08-01-preview/privateLinkResources.json
 - Microsoft.DocumentDB/preview/2019-08-01-preview/privateEndpointConnection.json
 modelerfour:
@@ -259,7 +259,7 @@ directive:
     from: notebook.json
     reason: The name of the provider is Microsoft.DocumentDB
   - suppress: PathResourceProviderNamePascalCase
-    from: nova.json
+    from: managedCassandra.json?
     reason: The name of the provider is Microsoft.DocumentDB
   - suppress: PathResourceProviderNamePascalCase
     from: privateEndpointConnection.json
@@ -273,13 +273,13 @@ directive:
   - suppress: RequiredSystemDataInNewApiVersions
     reason: We do not yet support system data
   - suppress: ListInOperationName
-    from: nova.json
+    from: managedCassandra.json?
     reason: False positive on GET instanceView.
   - suppress: RequiredDefaultResponse
     from: cosmos-db.json
     reason: Linter rules added without correcting existing issues.
   - suppress: DeleteOperationResponses
-    from: nova.json
+    from: managedCassandra.json?
     reason: Linter is broken and throwing false positives.
 ```
 
